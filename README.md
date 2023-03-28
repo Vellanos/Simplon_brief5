@@ -11,10 +11,14 @@ sudo apt install npm
 ```
 Assurez-vous d'avoir Parcel d'installé sur votre machine
 
-```parcel --version
+```
+parcel --version
+
 ```
 
 Si Parcel n'est pas installé sur votre machine, puis vérifier avec la commande précédente
 
-```sudo npm install -g parcel-bundler
+```
+sudo npm install -g parcel-bundler
+
 ```
