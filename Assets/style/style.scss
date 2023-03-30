@@ -11,21 +11,19 @@ $colorBackground: #C0803D;
 }
 
 body {
+    background-image: url('/Assets/img/last_hs.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
-  background-image: url('/Assets/img/last_hs.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   
+    height: 100vh;
+    justify-content: center;
 
-  div{
+  .accueil{
 
     color: black;
 
@@ -92,4 +90,41 @@ body {
     }
 
   }
+
+  .choixHero {
+    color: black;
+    background-color: $colorBackground;
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 10%;
+    margin-bottom: 3%;
+
+    font-size: 25px;
+
+    @media screen and (max-width: 445px) {
+      font-size: 15px;
+    }
+  }
+
+  .personnage {
+
+    transition: transform 0.3s ease-out;
+
+    @media screen and (max-width: 445px) {
+      width: 175px;
+      height: 285px;
+    }
+
+    @media screen and (max-width: 365px) {
+      width: 125px;
+      height: 200px;
+    }
+  }
+
+  .personnage:hover {
+    transform: scale(1.1);
+  }
+
+
 }
