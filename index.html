@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/Assets/style/style.scss">
     <link rel="stylesheet" href="/Assets/style/class.scss">
+    <link rel="stylesheet" href="/Assets/style/game.scss">
 
 </head>
 
@@ -25,9 +26,26 @@
         <h2> Choose your Hero</h2>
     </div>
     <div class="hide page_3">
-        <img src="Assets/img/heroes_classSelect_mage_hover.png" alt="Choix Jaina" class="personnage">
-        <img src="Assets/img/heroes_classSelect_warrior_hover.png" alt="Choix Garrosh" class="personnage">
+        <img src="Assets/img/heroes_classSelect_mage_hover.png" alt="Choix Jaina" class="personnage" id="choixJaina">
+        <img src="Assets/img/heroes_classSelect_warrior_hover.png" alt="Choix Garrosh" class="personnage" id="choixGarrosh">
     </div>
+    
+    <div id="timer" class="hide page_4"> 00:00 </div>
+    <div class="hide page_4">
+        <div class="hide page_4" id="p4_conteneur">
+            <div class="hide page_4 " id="p4_boutons">
+                <img src="/Assets/img/food.png" alt="Icone de nourriture" class="boutonGame">
+                <img src="/Assets/img/soin.png" alt="Icone de soin" class="boutonGame">
+                <img src="" alt="" class="boutonGame" id="boutonSwitch">
+            </div>
+            <div class="hide page_4" id="p4_barres">
+                <p>LES BARRES</p>
+                <p>LES BARRES</p>
+                <p>LES BARRES</p>
+            </div>
+        </div>
+    </div>
+    <img src="" alt="Portrait du personnage" id="portrait" class="hide page_4">
      
     
     <script src="./script.ts"></script>

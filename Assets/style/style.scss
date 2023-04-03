@@ -110,6 +110,7 @@ body {
   .personnage {
 
     transition: transform 0.3s ease-out;
+    cursor: pointer;
 
     @media screen and (max-width: 445px) {
       width: 175px;
