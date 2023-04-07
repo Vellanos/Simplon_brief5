@@ -69,7 +69,7 @@ export function fChoixPersonnage (arg1:string | null, arg2:HTMLCollectionOf<Elem
             arg5?.setAttribute("src", `${rage}`)
             arg5?.setAttribute("alt", "Icone de rage")
             arg6[arg6.length-1]?.setAttribute("id", "barreRage")
-            myHero = new Garrosh("Garrosh", 10, 10, 10) //100 80 30
+            myHero = new Garrosh("Garrosh", 100, 80, 30)
             
         }
         fRemoveRessource(arg6, myHero)
