@@ -14,6 +14,11 @@ $colorBackground: #C0803D;
   display: none;
 }
 
+.backColor {
+  background-color: $colorBackground;
+  padding: 1% 10%;
+}
+
 body {
     background-image: url('/Assets/img/last_hs.png');
     background-repeat: no-repeat;
@@ -84,6 +89,7 @@ body {
     p {
       font-size: 50px;
       font-weight: 900;
+      text-align: center;
     }
 
     input[type="text"]::placeholder {

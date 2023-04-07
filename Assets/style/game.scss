@@ -13,7 +13,8 @@
     flex-direction: column;
 
     gap: 20px;
-    margin-bottom: 100%;
+    margin-bottom: 80%;
+    margin-top: 10%;
 
 }
 
@@ -23,8 +24,9 @@
     align-items: center;
     justify-content: center;
     
-    gap: 20px;
-    margin-bottom: 100%;
+    gap: 45px;
+    margin-bottom: 80%;
+    margin-top: 10%;
 }
 
 .boutonGame{
@@ -39,8 +41,6 @@
     transform: translateX(-50%);
     width: 200px;
     height: 200px;
-
-    
 }
 
 #timer{
@@ -50,3 +50,90 @@
     transform: translateX(-50%);
 
 }
+
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+  
+    width: 250px;
+    height: 20px;
+
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 10px;
+    
+}
+
+#barreFood[value]::-webkit-progress-bar {
+    background-color: rgba($color: #883F09, $alpha: 0.3);
+}
+
+#barreSoin[value]::-webkit-progress-bar {
+    background-color: rgba($color: #12FD02, $alpha: 0.3);
+}
+
+#barreMana[value]::-webkit-progress-bar {
+    background-color: rgba($color: #0002C7, $alpha: 0.3);
+    
+}
+
+#barreRage[value]::-webkit-progress-bar {
+    background-color: rgba($color: #FF6901, $alpha: 0.3);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10px solid black;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#barreFood[value]::-webkit-progress-value {
+    background-color: #883F09;
+    border-right: 2px solid black; 
+}
+
+#barreSoin[value]::-webkit-progress-value {
+    background-color: #12FD02;
+    border-right: 2px solid black;
+}
+
+#barreMana[value]::-webkit-progress-value {
+    background-color: #0002C7;
+    border-right: 2px solid black;
+}
+
+#barreRage[value]::-webkit-progress-value {
+    background-color: #FF6901;
+    border-right: 2px solid black;
+}
+
+.conteneurAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.conteneurBot {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    text-align: center;
+
+    .bot {
+        padding: 10px 50px;
+    }
+
+    @media screen and (max-width: 490px) {
+        flex-direction: column;
+      }
+}
+

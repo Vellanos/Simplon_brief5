@@ -15,7 +15,7 @@
 
     <div class="accueil page_1"> <!-- class accueil-->
         <h1 class="page_1">GOCHI-STONE</h1>
-        <button id="play" class="page_1">PLAY</button> 
+        <button id="play" class="page_1">PLAY</button>
 
         <p class="hide page_2">ENTER YOUR NAME</p>
         <input type="text" placeholder="Your name" id="inputName" class="hide page_2">
@@ -26,27 +26,41 @@
     </div>
     <div class="hide page_3">
         <img src="Assets/img/heroes_classSelect_mage_hover.png" alt="Choix Jaina" class="personnage" id="choixJaina">
-        <img src="Assets/img/heroes_classSelect_warrior_hover.png" alt="Choix Garrosh" class="personnage" id="choixGarrosh">
+        <img src="Assets/img/heroes_classSelect_warrior_hover.png" alt="Choix Garrosh" class="personnage"
+            id="choixGarrosh">
     </div>
-    
+
     <div id="timer" class="hide page_4"> 00:00 </div>
     <div class="hide page_4">
         <div class="hide page_4" id="p4_conteneur">
             <div class="hide page_4 " id="p4_boutons">
-                <img src="/Assets/img/food.png" alt="Icone de nourriture" class="boutonGame">
-                <img src="/Assets/img/soin.png" alt="Icone de soin" class="boutonGame">
+                <img src="/Assets/img/food.png" alt="Icone de nourriture" class="boutonGame" id="boutonFood">
+                <img src="/Assets/img/soin.png" alt="Icone de soin" class="boutonGame" id="boutonSoin">
                 <img src="" alt="" class="boutonGame" id="boutonSwitch">
             </div>
             <div class="hide page_4" id="p4_barres">
-                <p>LES BARRES</p>
-                <p>LES BARRES</p>
-                <p>LES BARRES</p>
+                <progress value="" max="100" class="barre_progress" id="barreFood"></progress>
+                <progress value="" max="100" class="barre_progress" id="barreSoin"></progress>
+                <progress value="" max="100" class="barre_progress" id=""></progress>
+            </div>
+            <img src="" alt="Portrait du personnage" id="portrait" class="hide page_4">
+        </div>
+
+    </div>
+    <div class="page_5 hide conteneurAll">
+        <div class="page_5 hide top backColor">
+            <p class="page_5 hide">You lost</p>
+        </div>
+        <img src="Assets/img/fin.png" alt="Image de ange de la mort" class="page_5 hide">
+        <div class="page_5 hide conteneurBot">
+            <div class="page_5 hide bot backColor">
+                <p class="page_5 hide" id="timerPlayed"> You played xx:xx</p>
+            </div>
+            <div class="page_5 hide bot backColor" id="restart">
+                <p class="page_5 hide"> Restart </p>
             </div>
         </div>
-        <img src="" alt="Portrait du personnage" id="portrait" class="hide page_4">
     </div>
-    
-     
     
     <script src="./script.ts"></script>
 </body>
